@@ -333,3 +333,97 @@ button {
   fill: #fff;
 }
 /* #endregion mobile-menu */
+
+/* #region hero */
+.page-main {
+  background-color: #2e2f42;
+  padding: 72px 0;
+  max-width: 320px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    image-set(
+      url(../images/hero/hero-mob.jpg) 1x,
+      url(../images/hero/hero-mob@2x.jpg) 2x
+    );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  max-width: 216px;
+  margin: 0 auto 72px;
+}
+
+.main-button {
+  background-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .page-main {
+    max-width: 768px;
+    padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      image-set(
+        url(../images/hero/hero-tablet.jpg) 1x,
+        url(../images/hero/hero-tablet@2x.jpg) 2x
+      );
+  }
+  .main-text {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin: 0 auto 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .page-main {
+    padding: 188px 0;
+    max-width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      image-set(
+        url(../images/hero/hero-img.jpg) 1x,
+        url(../images/hero/hero-img@2x.jpg) 2x
+      );
+  }
+  .main-text {
+    margin: 0 auto 45px;
+  }
+}
+/* #endregion hero */
