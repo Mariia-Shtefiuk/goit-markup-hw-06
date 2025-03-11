@@ -510,7 +510,7 @@
     <!--#endregion Footer-->
 
     <!--#region Backdrop-->
-    <div class="backdrop">
+    <div class="backdrop is-open">
         <div class="modal">
             <button type="button" class="close-btn">
                 <svg class="close-icon" width="8" height="8">
@@ -560,11 +560,14 @@
                 <div class="modal-form-checkbox-content">
                     <input class="checkbox visually-hidden" type="checkbox" id="user-privacy" value="true"
                         name="user-privacy">
-                    <label class="checkbox-label" for="user-privacy"><span class="custom-checkbox"><svg width="10"
-                                height="8">
+                    <label class="checkbox-label" for="user-privacy">
+                        <span class="custom-checkbox"><svg width="10" height="8">
                                 <use href="./images/icons.svg#tick"></use>
-                            </svg></span>I accept the terms and conditions of the <a class="label-link" href="">Privacy
-                            Policy</a></label>
+                            </svg></span>
+                        <span>I accept the terms and conditions of the
+                            <a class="label-link" href="">Privacy Policy</a>
+                        </span>
+                    </label>
                 </div>
                 <button class="modal-form-btn" type="submit">Send</button>
             </form>
